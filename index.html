@@ -1,19 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B I O T</title>
+    <title>BIOT GROUP</title>
+    <link rel="icon" type="image/svg+xml" href="biotdark.svg">
     <style>
         body {
-            height: 100vh;   
-            display: grid; 
-            place-items: center; 
-            margin: 0; 
+            background-color: #222222;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #dddddd;
+            margin-bottom: 50px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333333;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+
+        .login-form label,
+        .login-form input[type="text"],
+        .login-form input[type="password"],
+        .login-form input[type="submit"] {
+            background-color: #444444;
+            border: none;
+            color: #dddddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .login-form input[type="submit"] {
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-	<img src="under.svg" />
+    <header>
+        <img src="biotdark.svg" alt="BIOT GROUP logo" class="logo">
+        <h1>Welcome to BIOT GROUP</h1>
+        <form class="login-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </header>
 </body>
 </html>
