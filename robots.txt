@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://biotgroup.carrd.co/sitemap.xml
